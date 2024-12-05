@@ -26,6 +26,7 @@ dependencies {
     implementation("ru.yandex.clickhouse:clickhouse-jdbc:0.3.2")
     implementation("com.fasterxml.jackson.datatype:jackson-datatype-jsr310")
     implementation("org.springframework:spring-jdbc:6.2.0")
+    implementation("jakarta.validation:jakarta.validation-api:3.1.0")
     testImplementation("org.springframework.boot:spring-boot-starter-test")
     testImplementation("org.jetbrains.kotlin:kotlin-test-junit5")
     testImplementation("org.springframework.kafka:spring-kafka-test")
