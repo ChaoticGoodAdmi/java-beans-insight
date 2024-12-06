@@ -21,12 +21,19 @@ repositories {
 dependencies {
     implementation("org.springframework.boot:spring-boot-starter-web")
     implementation("com.fasterxml.jackson.module:jackson-module-kotlin")
-    implementation("org.jetbrains.kotlin:kotlin-reflect")
-    implementation("org.springframework.kafka:spring-kafka")
-    implementation("ru.yandex.clickhouse:clickhouse-jdbc:0.3.2")
-    implementation("com.fasterxml.jackson.datatype:jackson-datatype-jsr310")
-    implementation("org.springframework:spring-jdbc:6.2.0")
     implementation("jakarta.validation:jakarta.validation-api:3.1.0")
+    implementation("com.fasterxml.jackson.datatype:jackson-datatype-jsr310")
+    implementation("org.jetbrains.kotlin:kotlin-reflect")
+
+    implementation("org.springframework.kafka:spring-kafka")
+
+    implementation("ru.yandex.clickhouse:clickhouse-jdbc:0.3.2")
+    implementation("org.springframework:spring-jdbc:6.2.0")
+
+    implementation("org.springframework.boot:spring-boot-starter-actuator:3.4.0")
+    implementation("io.micrometer:micrometer-registry-prometheus")
+    implementation("io.micrometer:micrometer-core")
+
     testImplementation("org.springframework.boot:spring-boot-starter-test")
     testImplementation("org.jetbrains.kotlin:kotlin-test-junit5")
     testImplementation("org.springframework.kafka:spring-kafka-test")
